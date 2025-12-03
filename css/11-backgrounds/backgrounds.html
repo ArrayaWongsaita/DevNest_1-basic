@@ -3,7 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./backgrounds.css" />
     <title>Document</title>
+    <!-- Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
-  <body></body>
+  <body>
+    <section id="background">
+      <!-- (div.example>h2{$}+div.bg-demo+pre>code)*5 -->
+      <div class="example">
+        <h2>1 bg-color</h2>
+        <div class="bg-demo bg-color"></div>
+        <pre><code>background-color: aqua;</code></pre>
+      </div>
+
+      <div class="example">
+        <h2>2 bg Image</h2>
+        <div class="bg-demo bg-image"></div>
+        <pre><code>background-image: url("https://picsum.photos/200/300");</code></pre>
+      </div>
+
+      <div class="example">
+        <h2>3 bg linear gradient</h2>
+        <div class="bg-demo linear-gradient"></div>
+        <pre><code>
+background: linear-gradient(to right, red, yellow, green);
+        </code></pre>
+      </div>
+
+      <div class="example">
+        <h2>4 radial Gradient</h2>
+        <div class="bg-demo radial-gradient"></div>
+        <pre><code> background: radial-gradient(ellipse, red, yellow, green);</code></pre>
+      </div>
+      <div class="example">
+        <h2>5 conic gradient</h2>
+        <div class="bg-demo conic-gradient"></div>
+        <pre><code>background: conic-gradient(red, yellow, green);</code></pre>
+      </div>
+    </section>
+  </body>
 </html>
