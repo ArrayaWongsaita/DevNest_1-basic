@@ -21,74 +21,91 @@
       <!-- (div.example>h3{$}+p+div.border+pre>code)*11 -->
       <div class="example">
         <h3>1</h3>
-        <p></p>
+        <p>50 px</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code> width: 50px;</code></pre>
       </div>
+
       <div class="example">
         <h3>2</h3>
-        <p></p>
+        <p>50%</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>width: 50%;</code></pre>
       </div>
+
       <div class="example">
         <h3>3</h3>
-        <p></p>
+        <p>10 em</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>width: 10em;</code></pre>
       </div>
       <div class="example">
         <h3>4</h3>
-        <p></p>
+        <p>10rem</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>width: 10rem;</code></pre>
       </div>
       <div class="example">
         <h3>5</h3>
-        <p></p>
+        <p>vw vh</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>
+width: 50vw;
+height: 10vh;
+        </code></pre>
       </div>
+
       <div class="example">
         <h3>6</h3>
-        <p></p>
-        <div class="border"></div>
-        <pre><code></code></pre>
+        <p>ch ขนาดของเลข 0</p>
+        <div class="border">00000</div>
+        <pre><code>
+width: 6ch;
+        </code></pre>
       </div>
+
       <div class="example">
         <h3>7</h3>
-        <p></p>
-        <div class="border"></div>
+        <p>ex ความสูงของอักษร x</p>
+        <div class="border">x</div>
         <pre><code></code></pre>
       </div>
+
       <div class="example">
         <h3>8</h3>
-        <p></p>
+        <p>min()</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>
+          width: min(50%, 200px);
+        </code></pre>
       </div>
       <div class="example">
         <h3>9</h3>
-        <p></p>
+        <p>max</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>
+width: max(50%, 200px);
+        </code></pre>
       </div>
       <div class="example">
         <h3>10</h3>
-        <p></p>
-        <div class="border"></div>
-        <pre><code></code></pre>
+        <p>clamp</p>
+        <div class="border">hello</div>
+        <pre><code>
+width: clamp(100px, 50%, 300px);
+        </code></pre>
       </div>
       <div class="example">
         <h3>11</h3>
-        <p></p>
+        <p>calc</p>
         <div class="border"></div>
-        <pre><code></code></pre>
+        <pre><code>width: calc(50% + 100px);</code></pre>
       </div>
     </section>
 
     <nav>
       <a href="../07-overflow/index.html" class="link">back</a>
+      <a href="../09-typography/typography.html" class="link">next</a>
     </nav>
   </body>
 </html>
