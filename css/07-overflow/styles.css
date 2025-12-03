@@ -1,0 +1,29 @@
+.paren {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 2px solid black;
+}
+
+.child {
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(to top, red, yellow);
+}
+
+.visible {
+  overflow: visible;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.overflow-xy {
+  overflow-x: visible;
+  overflow-y: visible;
+}

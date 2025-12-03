@@ -8,6 +8,10 @@
   border-radius: 4px;
 }
 
+.link:hover {
+  background-color: #555;
+}
+
 .example {
   background-color: #ccc;
   margin: 20px 0;

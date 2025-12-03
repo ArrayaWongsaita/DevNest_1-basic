@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+    <!-- Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <section id="overflow">
+      <!-- (div.example>h2{$}+p+div.paren>div.child^pre>code)*5 -->
+      <div class="example">
+        <h2>1 visible (default)</h2>
+        <p>content ล้นออกมาข้างนอก</p>
+        <div class="paren visible">
+          <div class="child"></div>
+        </div>
+        <pre><code>
+.visible {
+  overflow: visible;
+}
+        </code></pre>
+      </div>
+
+      <div class="example">
+        <h2>2 hidden</h2>
+        <p>content ล้นออกมาจะถูกตัดทิ้ง</p>
+        <div class="paren hidden">
+          <div class="child"></div>
+        </div>
+        <pre><code>
+.hidden {
+  overflow: hidden;
+}
+        </code></pre>
+      </div>
+
+      <div class="example">
+        <h2>3 scroll</h2>
+        <p>แสดง scrollbar</p>
+        <div class="paren scroll">
+          <div class="child"></div>
+        </div>
+        <pre><code>overflow: scroll;</code></pre>
+      </div>
+
+      <div class="example">
+        <h2>4 overflow-x and overflow-y</h2>
+        <p>ความคุมแนวนอนแนวตั้งได้</p>
+        <div class="paren overflow-xy">
+          <div class="child"></div>
+        </div>
+        <pre><code>
+overflow-x: visible;
+overflow-y: scroll;</code></pre>
+      </div>
+
+      <div class="example">
+        <h2>5</h2>
+        <p></p>
+        <div class="paren">
+          <div class="child"></div>
+        </div>
+        <pre><code></code></pre>
+      </div>
+    </section>
+  </body>
+</html>
