@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>Document</title>
+    <!-- Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <!-- .example -->
+    <div class="example">
+      <h3>Element selector</h3>
+      <small>นี้คือ Element selector</small>
+      <pre>
+        <code>
+small {
+    color: purple;
+  }
+        </code>
+      </pre>
+      <p>a b c</p>
+    </div>
+
+    <div class="example">
+      <h3>class selector</h3>
+      <p class="by-class">นี้คือ class selector</p>
+      <!-- pre>code -->
+      <!-- <pre><code>content</code></pre> -->
+      <pre><code>
+.by-class {
+  color: blue;
+}  
+</code></pre>
+    </div>
+
+    <div class="example">
+      <h3>id selector</h3>
+      <p id="by-id">นี้คือ id selector</p>
+      <pre><code>
+#by-id {
+  color: orange;
+}    
+      </code></pre>
+    </div>
+    <!-- section.combination -->
+    <section class="combination">
+      <div class="example">
+        <h3>1. Descendant Selector (space)</h3>
+
+        <div class="descendant">
+          <p>direct child</p>
+          <div>
+            <p>nested child</p>
+          </div>
+        </div>
+
+        <pre><code>
+.descendant p {
+  color: blue;
+}
+        </code></pre>
+      </div>
+
+      <div class="example">
+        <h3>2. Chid selector (>)</h3>
+
+        <div class="child">
+          <p>direct child</p>
+          <div>
+            <p>nested child</p>
+          </div>
+        </div>
+
+        <pre><code>
+.child > p {
+  color: goldenrod;
+}     
+          </code></pre>
+      </div>
+
+      <div class="example">
+        <h3>3. Adjacent Sibling (+)</h3>
+        <div class="sibling">
+          <h4>h4</h4>
+          <p>p</p>
+          <span>span</span>
+          <p>p</p>
+        </div>
+        <pre><code>
+div.sibling h4 + p {
+  color: green;
+}
+          </code></pre>
+      </div>
+
+      <div class="example">
+        <h3>4. General Sibling (~)</h3>
+        <div class="general-sibling">
+          <h4>h4</h4>
+          <p>p</p>
+          <span>span</span>
+          <p>p</p>
+        </div>
+        <pre><code>
+div.general-sibling h4 ~ p {
+  color: chocolate;
+}
+          </code></pre>
+      </div>
+    </section>
+  </body>
+</html>

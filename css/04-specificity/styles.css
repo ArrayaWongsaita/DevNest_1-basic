@@ -1,0 +1,18 @@
+p {
+  color: aqua !important;
+}
+
+.text {
+  color: blue;
+}
+
+#specificity p#content {
+  color: coral;
+}
+#content.text {
+  color: brown;
+}
+
+p {
+  color: red;
+}

@@ -1,0 +1,30 @@
+small {
+  color: purple;
+}
+h3 {
+  color: brown;
+}
+
+.by-class {
+  color: blue;
+}
+
+#by-id {
+  color: orange;
+}
+
+.descendant p {
+  color: blue;
+}
+
+.child > p {
+  color: goldenrod;
+}
+
+div.sibling h4 + p {
+  color: green;
+}
+
+div.general-sibling h4 ~ p {
+  color: chocolate;
+}

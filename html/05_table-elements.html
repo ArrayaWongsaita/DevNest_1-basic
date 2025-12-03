@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table</h1>
+
+    <!-- <table border="1"> html v4 -->
+    <h4>basic</h4>
+    <table>
+      <tr>
+        <!-- td{row1 data$}*3 -->
+        <th>row1 data1</th>
+        <td>row1 data2</td>
+        <td>row1 data3</td>
+      </tr>
+      <tr>
+        <th>row2 data1</th>
+        <td>row2 data2</td>
+        <td>row2 data3</td>
+      </tr>
+      <tr>
+        <td>data 1</td>
+        <td>data 2</td>
+        <td>data 3</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <tr>
+        <th>ชื่อ</th>
+        <th>อายุ</th>
+        <th>เมือง</th>
+      </tr>
+
+      <tr>
+        <td>สมชาย</td>
+        <td>25</td>
+        <td>กรุงเทพ</td>
+      </tr>
+
+      <!-- สมหญิง -->
+      <!-- 30 -->
+      <!-- เชียงใหม่ -->
+      <tr>
+        <td>สมหญิง</td>
+        <td>30</td>
+        <td>เชียงใหม่</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h3>รวมเซลส์ colspan rowspan</h3>
+    <p>col รวมแนวนอน</p>
+    <p>row รวมแนวตั้ง</p>
+
+    <table>
+      <tr>
+        <th>ชื่อ</th>
+        <th colspan="2">เบอร์โทร</th>
+      </tr>
+      <tr>
+        <td>สมชาย</td>
+        <td>080-000-000</td>
+        <td>080-000-001</td>
+      </tr>
+      <tr>
+        <td>สมหญิง</td>
+        <td colspan="2">090-000-000</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <tr>
+        <th>ชื่อ</th>
+        <th>รายละเอียด</th>
+      </tr>
+      <tr>
+        <td rowspan="2">สมชาย</td>
+        <td>อายุ 25 ปี</td>
+      </tr>
+      <tr>
+        <td>เมือง กรุงเทพ</td>
+      </tr>
+      <tr>
+        <td rowspan="2">สมหญิง</td>
+        <td>อายุ 30 ปี</td>
+      </tr>
+      <tr>
+        <td>เมือง เชียงใหม่</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <caption>
+        ตารางสั่งซื้อ
+      </caption>
+
+      <thead>
+        <tr>
+          <th>สินค้า</th>
+          <th>ราคา</th>
+          <th>จำนวน</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>แอปเปิ้ล</td>
+          <td>50 บาท</td>
+          <td>10</td>
+        </tr>
+
+        <tr>
+          <td>กล้วย</td>
+          <td>30 บาท</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>รวม</td>
+          <td colspan="2">25 ชิ้น</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

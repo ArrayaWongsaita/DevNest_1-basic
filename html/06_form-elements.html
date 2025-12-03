@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>input tag</legend>
+
+        <div>
+          <label for="text">type text</label> <br />
+          <input type="text" name="text" id="text" />
+        </div>
+
+        <div>
+          <label for="password">type password</label> <br />
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div>
+          <label for="email">type email</label> <br />
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="number">type number</label> <br />
+          <input type="number" name="number" id="number" />
+        </div>
+
+        <div>
+          <label for="date">type date</label> <br />
+          <input type="date" name="date" id="date" />
+        </div>
+
+        <div>
+          <label for="time">type time</label> <br />
+          <input type="time" name="time" id="time" />
+        </div>
+
+        <div>
+          <label for="color">type color</label> <br />
+          <input type="color" name="color" id="color" />
+        </div>
+        <div>
+          <label for="range">type range</label> <br />
+          <input type="range" name="range" id="range" />
+        </div>
+        <div>
+          <label for="search">type search</label> <br />
+          <input type="search" name="search" id="search" />
+        </div>
+        <div>
+          <label for="tel">type tel</label> <br />
+          <input type="tel" name="tel" id="tel" />
+        </div>
+        <div>
+          <label for="url">type url</label> <br />
+          <input type="url" name="url" id="url" placeholder="your url" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio and Checkbox</legend>
+
+        <div>
+          <strong>เพศ radio เลื่อกได้แค่ 1 ตัว</strong>
+          <br />
+          <div>
+            <input type="radio" name="gender" id="male" value="m" />
+            <label for="male">ชาย</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="female" value="f" />
+            <label for="female">หญิง</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="other" value="o" />
+            <label for="other">อื่นๆ</label>
+          </div>
+        </div>
+
+        <div>
+          <strong>งานอิเรก checkbox เลือกได้หลายตัว </strong>
+          <br />
+
+          <div>
+            <input type="checkbox" name="hobby" id="reading" value="reading" />
+            <label for="reading">อ่านหนังสือ</label>
+          </div>
+          <div>
+            <input type="checkbox" name="hobby" id="sport" value="sport" />
+            <label for="sport">กีฬา</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>select and textarea</legend>
+
+        <div>
+          <label for="education">ระดับการศึกษา</label>
+          <br />
+          <select name="" id="education">
+            <!-- option{ม $}*4 -->
+            <optgroup label="มัธยม">
+              <option value="">ม 1</option>
+              <option value="">ม 2</option>
+              <option value="">ม 3</option>
+              <option value="">ม 4</option>
+            </optgroup>
+            <optgroup label="ประถม">
+              <!-- option{ป $}*4 -->
+              <option value="">ป 1</option>
+              <option value="">ป 2</option>
+              <option value="">ป 3</option>
+              <option value="">ป 4</option>
+            </optgroup>
+          </select>
+
+          <div>
+            <label for="message">message</label>
+            <br />
+            <textarea
+              name=""
+              id="message"
+              rows="5"
+              cols="50"
+              placeholder="กรองข้อความที่นี้"
+            ></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit">submit</button>
+      <br />
+      <button type="reset">reset</button>
+      <br />
+      <button type="button" onclick="alert('คุณคลิกปุ่ม')">button</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Box Model</h2>
+
+    <div class="example">
+      <h3>1. Content - เนื้อหา</h3>
+      <div class="content">Content</div>
+      <hr />
+      <div class="content padding-demo">Content</div>
+      <hr />
+      <div class="content padding-demo border-demo">Content</div>
+      <hr />
+      <div class="content padding-demo border-demo border-radius-demo">
+        Content
+      </div>
+      <hr />
+      <div
+        class="margin-demo content padding-demo border-demo border-radius-demo"
+      >
+        Content
+      </div>
+    </div>
+    <hr />
+    <section id="display">
+      <h2>Display</h2>
+
+      <br />
+      <h3>Block</h3>
+      <div class="block">
+        <!-- div{div $}*3 -->
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+      </div>
+      <br />
+      <h3>Inline</h3>
+      <div class="inline">
+        <!-- div{div $}*3 -->
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+      </div>
+      <br />
+      <h3>Inline-block</h3>
+      <div class="inline-block">
+        <!-- div{div $}*3 -->
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+      </div>
+      <br />
+      <h3>none</h3>
+      <div class="none">
+        <!-- div{div $}*3 -->
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+      </div>
+    </section>
+  </body>
+</html>

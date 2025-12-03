@@ -1,0 +1,30 @@
+.hover-demo:hover {
+  color: red;
+}
+
+.child-demo p:first-child {
+  color: blue;
+}
+.child-demo p:last-child {
+  color: orange;
+}
+.child-demo p:nth-child(even) {
+  color: green;
+}
+
+.text-demo::first-letter {
+  font-size: 40px;
+}
+
+.text-demo::first-line {
+  background: red;
+}
+
+.before-after-demo::before {
+  content: "เติมเองด้วย css";
+  color: gold;
+}
+.before-after-demo::after {
+  content: "*";
+  color: red;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+    <!-- Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <section>
+      <h2>Pseudo-classes :</h2>
+      <p>เลือก element ตาม state หรือตำแหน่ง</p>
+
+      <!-- .example -->
+      <div class="example">
+        <h3>:hover - เม้าชี้</h3>
+        <!-- p.hover-demo -->
+        <p class="hover-demo">ลองชี้เม้า</p>
+        <pre><code>
+.hover-demo:hover {
+  color: red;
+}           
+        </code></pre>
+      </div>
+
+      <!-- .example -->
+      <div class="example">
+        <h3>:first-child :last-child :nth-child()</h3>
+
+        <!-- .child-demo -->
+        <div class="child-demo">
+          <!-- p{child $}*5 -->
+          <p>child 1</p>
+          <p>child 2</p>
+          <p>child 3</p>
+          <p>child 4</p>
+          <p>child 5</p>
+        </div>
+
+        <pre><code>
+.child-demo p:first-child {
+  color: blue;
+}
+.child-demo p:last-child {
+  color: orange;
+}
+.child-demo p:nth-child(even) {
+  color: green;
+}     
+        </code></pre>
+      </div>
+    </section>
+
+    <!-- section.pseudo-element -->
+    <section class="pseudo-element">
+      <h2>pseudo-element (::)</h2>
+      <p>สร้างหรือเลือกส่วนหนึ่้งของ element</p>
+
+      <div class="example">
+        <h3>::first-letter & ::first-line</h3>
+        <!-- p.text-demo -->
+        <p class="text-demo">
+          <!-- lorem -->
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+          ducimus quisquam adipisci neque consequuntur, consectetur repellendus
+          enim sit sint optio. Nulla labore eos incidunt nostrum pariatur
+          asperiores magni accusantium commodi.
+        </p>
+
+        <pre><code>
+.text-demo::first-letter {
+  font-size: 40px;
+}
+
+.text-demo::first-line {
+  background: red;
+}         
+        </code></pre>
+      </div>
+
+      <div class="example">
+        <h3>::before & ::after</h3>
+        <p class="before-after-demo">content</p>
+      </div>
+    </section>
+  </body>
+</html>

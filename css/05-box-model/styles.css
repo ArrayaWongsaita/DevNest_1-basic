@@ -1,0 +1,68 @@
+.content {
+  width: 200px;
+  height: 200px;
+  background-color: darkgrey;
+}
+
+.padding-demo {
+  /* padding: 20px; */
+  /* padding: 15px 20px; */
+  /* padding: 10px 20px 30px; */
+  padding: 10px 20px 30px 40px;
+}
+
+.border-demo {
+  /* border-width: 10px; */
+  /* solid double dotted dashed */
+  /* border-style: solid; */
+  /* border-color: blue; */
+  border: 5px solid blueviolet;
+}
+
+.border-radius-demo {
+  /* border-radius: 10px; */
+  /* border-radius: 10px 20px; */
+  /* border-radius: 10px 20px 30px;
+  border-radius: 10px 20px 30px 40px; */
+  border-radius: 5%;
+}
+
+.margin-demo {
+  margin: 20px;
+}
+
+.block * {
+  display: block;
+  background-color: aqua;
+  margin: 5px;
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+}
+
+.inline * {
+  display: inline;
+  background-color: aqua;
+  margin: 5px;
+  padding: 5px;
+  /* w h ไม่มีผล ไม่ทำงาน ไม่สามารถกำหนดได้ */
+  width: 400px;
+  height: 200px;
+}
+.inline-block * {
+  display: inline-block;
+  background-color: aqua;
+  margin: 5px;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.none:hover * {
+  display: none;
+  background-color: aqua;
+  margin: 5px;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+}
