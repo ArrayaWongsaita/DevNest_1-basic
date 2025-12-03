@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Science+Gothic:wght@100..900&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 html {
-  font-family: "Afacad Flux", sans-serif;
+  font-family: "Science Gothic", sans-serif;
 }
 
 .link {
