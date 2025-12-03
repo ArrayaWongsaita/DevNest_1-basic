@@ -24,6 +24,10 @@
 }
 
 .overflow-xy {
-  overflow-x: visible;
+  overflow-x: scroll;
   overflow-y: visible;
+}
+
+.auto {
+  overflow: auto;
 }
