@@ -1,0 +1,25 @@
+.color-box {
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.named {
+  background-color: red;
+}
+
+.hex {
+  /* 0-f 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+
+  background: #ffaa33;
+}
+
+.rgb {
+  background: rgb(255, 0, 0);
+}
+
+.rgba {
+  background: rgba(255, 0, 0, 0.5);
+}
