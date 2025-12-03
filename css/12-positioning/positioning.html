@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./positioning.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="position">
+      <!-- (div.example>h2{$}+div.pos-demo+pre>code)*5 -->
+      <div class="example">
+        <h2>1 position : static (default)</h2>
+        <div class="pos-demo static">Static</div>
+        <pre><code></code></pre>
+      </div>
+
+      <div class="example">
+        <h2>2 relative</h2>
+        <div class="pos-demo relative">Relative</div>
+        <pre><code></code></pre>
+      </div>
+
+      <div class="example">
+        <h2>3 position: absolute</h2>
+        <div class="relative-parent">
+          <div class="pos-demo absolute">absolute</div>
+          <div class="pos-demo absolute2">absolute2</div>
+          <div class="pos-demo absolute3">absolute3</div>
+        </div>
+        <pre><code></code></pre>
+      </div>
+      <div class="example">
+        <h2>4 position: fixed</h2>
+        <div class="pos-demo fixed">Fixed</div>
+        <pre><code></code></pre>
+      </div>
+      <div class="example">
+        <h2>5 position: sticky</h2>
+        <div class="p-sticky">
+          <div class="pos-demo sticky">sticky</div>
+        </div>
+        <pre><code></code></pre>
+      </div>
+
+      <div style="height: 100vh"></div>
+    </section>
+  </body>
+</html>
