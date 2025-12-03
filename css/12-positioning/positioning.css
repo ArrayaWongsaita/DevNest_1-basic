@@ -66,6 +66,8 @@
 .sticky {
   position: sticky;
   top: 65px;
+  /* left: 10px; */
+  margin: auto;
 }
 
 .p-sticky {
