@@ -23,3 +23,18 @@
 .rgba {
   background: rgba(255, 0, 0, 0.5);
 }
+
+.text-color {
+  color: aqua;
+}
+
+.text-opacity {
+  color: red;
+  opacity: 0.5;
+}
+
+.shadow-demo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3);
+}
