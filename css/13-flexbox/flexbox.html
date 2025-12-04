@@ -13,9 +13,9 @@
       <div class="example">
         <h2>display: flex</h2>
         <div class="flex-demo">
-          <div class="item">item 1</div>
-          <div class="item">item 2</div>
-          <div class="item">item 3</div>
+          <div class="item-demo">item-demo 1</div>
+          <div class="item-demo">item-demo 2</div>
+          <div class="item-demo">item-demo 3</div>
         </div>
       </div>
     </section>
@@ -107,7 +107,7 @@
       </div>
       <div class="example">
         <h2>2 flex-start</h2>
-        <div class="flex-box flex-start">
+        <div class="flex-box al-flex-start">
           <div class="item">item 1</div>
           <div class="item tall">item 2</div>
           <div class="item">item 3</div>
@@ -135,6 +135,62 @@
           <div class="item">item 1</div>
           <div class="item tall">item 2</div>
           <div class="item">item 3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section>h2+(div.example>h3{$}+div.flex-box>div.item{$}*3)*6 -->
+    <section>
+      <h2>flex item properties</h2>
+      <div class="example">
+        <h3>1 flex-grow</h3>
+        <div class="flex-box">
+          <div class="item">1</div>
+          <div style="flex-grow: 1" class="item">2</div>
+          <!-- <div style="flex-grow: 3" class="item">3</div> -->
+        </div>
+      </div>
+      <div class="example">
+        <h3>2 flex-shrink</h3>
+        <div class="flex-box">
+          <div style="flex-shrink: 0" class="item wide">1</div>
+          <div style="flex-shrink: 2" class="item wide">2</div>
+          <div style="flex-shrink: 4" class="item wide">3</div>
+        </div>
+      </div>
+      <div class="example">
+        <h3>3 flex-basis</h3>
+        <div class="flex-box">
+          <div style="flex-basis: 200px" class="item">1</div>
+          <div style="flex-basis: 300px" class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+      <div class="example">
+        <h3>4 flex: shorthand</h3>
+        <div class="flex-box">
+          <!-- grow shrink basis -->
+          <div style="flex: 1 2 200px" class="item">1</div>
+          <div style="flex: 1 4" class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+      <div class="example">
+        <h3>5 order:</h3>
+        <div class="flex-box">
+          <div style="order: 2" class="item">1 order(3)</div>
+          <div style="order: 1" class="item">2 order(2)</div>
+          <div style="order: 1" class="item">3</div>
+          <div style="order: 0" class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+      <div class="example">
+        <h3>6 align-self</h3>
+        <div class="flex-box">
+          <div style="align-self: flex-start" class="item">1</div>
+          <div class="item">2</div>
+          <div style="align-self: center" class="item">3</div>
         </div>
       </div>
     </section>
