@@ -95,6 +95,7 @@
       "sidebar main"
       "footer footer";
     grid-template-rows: 100px 250px minmax(400px, 1fr) 100px;
+    grid-template-columns: 150px minmax(200px, 1fr);
   }
 }
 
@@ -108,5 +109,107 @@
       "main main"
       "footer footer";
     grid-template-rows: 100px 250px 250px minmax(400px, 1fr) 100px;
+  }
+}
+
+/* Mobile First */
+.grid-demo-3 {
+  margin-top: 300px;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar sidebar"
+    "ads ads"
+    "main main"
+    "footer footer";
+  grid-template-rows: 100px 100px 250px minmax(400px, 1fr) 100px;
+  grid-template-columns: 1fr;
+}
+
+/* ตอนที่มากกว่า 768 */
+@media (min-width: 768px) {
+  .grid-demo-3 {
+    grid-template-areas:
+      "header header"
+      "ads ads"
+      "sidebar main"
+      "footer footer";
+    grid-template-rows: 100px 250px minmax(400px, 1fr) 100px;
+    grid-template-columns: 200px minmax(400px, 1fr);
+  }
+}
+/* ตอนที่มากกว่า 1200 */
+@media (min-width: 1200px) {
+  .grid-demo-3 {
+    grid-template-areas:
+      "header header header"
+      "sidebar main ads"
+      "footer footer footer";
+    grid-template-rows: 100px minmax(400px, 1fr) 100px;
+    grid-template-columns: 150px minmax(400px, 1fr) 150px;
+  }
+}
+
+/* --------------- flex layout */
+
+.flex-layout {
+  margin-top: 300px;
+}
+
+.header-flex {
+  background-color: coral;
+  height: 100px;
+}
+
+.sidebar-flex {
+  background-color: aqua;
+}
+.ads-flex {
+  background-color: brown;
+  height: 250px;
+}
+.ads-flex-2 {
+  background-color: brown;
+  height: 250px;
+  display: none;
+}
+
+.main-flex {
+  background-color: aquamarine;
+  height: 400px;
+}
+
+.footer-flex {
+  background-color: blue;
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  .ads-flex {
+    /* ให้หายไป */
+    display: none;
+  }
+  .ads-flex-2 {
+    display: block;
+  }
+  .container {
+    display: flex;
+    /* background-color: brown; */
+  }
+  .main-flex {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ads-flex {
+    display: block;
+    order: 1;
+    width: 150px;
+    /* height: 100%; */
+    height: auto;
+  }
+  .ads-flex-2 {
+    display: none;
   }
 }
