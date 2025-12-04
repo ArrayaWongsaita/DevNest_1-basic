@@ -1,0 +1,112 @@
+.responsive-box {
+  padding: 40px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .responsive-box {
+    background-color: purple;
+  }
+  .responsive-box p::after {
+    content: "Desktop";
+  }
+}
+@media (max-width: 992px) {
+  .responsive-box {
+    background-color: rgb(57, 57, 2);
+  }
+  .responsive-box p::after {
+    content: "tablet ipad Small laptop";
+  }
+}
+
+/* ถ้าหน้าจอกว้างน้อยกว่าหรือเท่า 768px ให้ใช้ css นี้ */
+@media (max-width: 768px) {
+  .responsive-box {
+    background-color: green;
+  }
+  .responsive-box p::after {
+    content: "tablet";
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-box {
+    background-color: blue;
+  }
+  .responsive-box p::after {
+    content: "mobile";
+  }
+}
+
+.item-demo {
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blue;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: aqua;
+}
+.ads {
+  grid-area: ads;
+  background-color: brown;
+}
+
+.main {
+  grid-area: main;
+  background-color: aquamarine;
+}
+.header {
+  grid-area: header;
+  background-color: coral;
+}
+
+/* Desktop first */
+.grid-demo-2 {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main ads"
+    "footer footer footer";
+  grid-template-rows: 100px minmax(400px, 1fr) 100px;
+  grid-template-columns: 150px minmax(200px, 1fr) 150px;
+}
+
+/* Tablet size */
+@media (max-width: 992px) {
+  .grid-demo-2 {
+    grid-template-areas:
+      "header header"
+      "ads ads"
+      "sidebar main"
+      "footer footer";
+    grid-template-rows: 100px 250px minmax(400px, 1fr) 100px;
+  }
+}
+
+/* Mobile size */
+@media (max-width: 576px) {
+  .grid-demo-2 {
+    grid-template-areas:
+      "header header"
+      "sidebar sidebar"
+      "ads ads"
+      "main main"
+      "footer footer";
+    grid-template-rows: 100px 250px 250px minmax(400px, 1fr) 100px;
+  }
+}
